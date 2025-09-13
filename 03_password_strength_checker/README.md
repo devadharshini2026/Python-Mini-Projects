@@ -1,6 +1,6 @@
 # 🔐 Password Strength Checker
 
-**Completion Date:** 05/12/2022  
+**Completion Date:** DEC 2022
 **Concepts Covered:** Python Functions | Loops | Conditionals | Regex | File Handling | CLI Applications  
 
 ---
