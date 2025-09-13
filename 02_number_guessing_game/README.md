@@ -26,10 +26,11 @@ Each successful game is **saved in a history file**, allowing players to track t
 ---
 
 ## 🔹 Example Usage
-```Enter your guess: 50
+```
+Enter your guess: 50
 Too high! Try again.
 Enter your guess: 30
 Too low! Try again.
 Enter your guess: 37
-Congratulations! You guessed it in 3 attempts.```
+Congratulations! You guessed it in 3 attempts.
 
