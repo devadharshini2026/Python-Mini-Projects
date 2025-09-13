@@ -29,6 +29,7 @@ git clone https://github.com/devadharshini2026/Python-Mini-Projects.git
 
 Each project folder is self-contained, with its own Python files and README.
 
+---
 ## 🔹 Project List
 
 | #  | Project Name                  | Concepts Covered |
@@ -79,3 +80,4 @@ Each project folder is self-contained, with its own Python files and README.
 | 44 | Calculator with History GUI   | GUI, File Handling, Functions |
 | 45 | Quiz App GUI                  | GUI, Loops, File Handling |
 | 46 | Mini ML Model                 | Numpy, Pandas, Scikit-learn |
+---
