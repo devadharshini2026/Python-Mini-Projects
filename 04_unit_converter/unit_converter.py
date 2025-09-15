@@ -1,84 +1,43 @@
-import os
-history_file = "history.txt"
-
-def save_history(entry):
-    with open(history_file, "a") as f:
-        f.write(entry + "\n")
-
-def show_history():
-    if os.path.exists(history_file):
-        print("\n=== Conversion History ===")
-        with open(history_file, "r") as f:
-            print(f.read())
-    else:
-        print("\nNo history available.")
-
 def length_converter():
-    print("\nLength Converter (meters ↔ kilometers ↔ miles)")
-    value = float(input("Enter value: "))
-    unit = input("Enter unit (m/km/miles): ").lower()
-    
-    if unit == "m":
-        km = value / 1000
-        miles = value / 1609.34
-    elif unit == "km":
-        m = value * 1000
-        miles = value / 1.60934
-    elif unit == "miles":
-        m = value * 1609.34
-        km = value * 1.60934
-    else:
-        print("Invalid unit!")
-        return
-    
-    if unit == "m":
-        print(f"{value} m = {km:.2f} km = {miles:.2f} miles")
-        save_history(f"{value} m = {km:.2f} km = {miles:.2f} miles")
-    elif unit == "km":
-        print(f"{value} km = {m:.2f} m = {miles:.2f} miles")
-        save_history(f"{value} km = {m:.2f} m = {miles:.2f} miles")
-    elif unit == "miles":
-        print(f"{value} miles = {m:.2f} m = {km:.2f} km")
-        save_history(f"{value} miles = {m:.2f} m = {km:.2f} km")
+    print("\n=== Length Converter ===")
+    meters = float(input("Enter length in meters: "))
+    print(f"{meters} meters = {meters * 100} centimeters")
+    print(f"{meters} meters = {meters * 39.3701} inches")
+    print(f"{meters} meters = {meters * 3.28084} feet\n")
+
+def temperature_converter():
+    print("\n=== Temperature Converter ===")
+    celsius = float(input("Enter temperature in Celsius: "))
+    print(f"{celsius}°C = {(celsius * 9/5) + 32}°F")
+    print(f"{celsius}°C = {celsius + 273.15}K\n")
 
 def weight_converter():
-    print("\nWeight Converter (kg ↔ g ↔ pounds)")
-    value = float(input("Enter value: "))
-    unit = input("Enter unit (kg/g/lb): ").lower()
-    
-    if unit == "kg":
-        g = value * 1000
-        lb = value * 2.20462
-    elif unit == "g":
-        kg = value / 1000
-        lb = value / 453.592
-    elif unit == "lb":
-        kg = value / 2.20462
-        g = kg * 1000
-    else:
-        print("Invalid unit!")
-        return
-    
-    if unit == "kg":
-        print(f"{value} kg = {g:.2f} g = {lb:.2f} lb")
-        save_history(f"{value} kg = {g:.2f} g = {lb:.2f} lb")
-    elif unit == "g":
-        print(f"{value} g = {kg:.2f} kg = {lb:.2f} lb")
-        save_history(f"{value} g = {kg:.2f} kg = {lb:.2f} lb")
-    elif unit == "lb":
-        print(f"{value} lb = {kg:.2f} kg = {g:.2f} g")
-        save_history(f"{value} lb = {kg:.2f} kg = {g:.2f} g")
+    print("\n=== Weight Converter ===")
+    kg = float(input("Enter weight in kilograms: "))
+    print(f"{kg} kg = {kg * 1000} grams")
+    print(f"{kg} kg = {kg * 2.20462} pounds\n")
 
-def unit_converter():
+def main():
     print("=== Unit Converter ===")
-    print("Options:")
-    print("1. Length")
-    print("2. Weight")
-    print("Type 'history' to view past conversions or 'exit' to quit.\n")
-    
     while True:
-        choice = input("Select option (1/2): ").strip().lower()
+        print("1. Length Converter")
+        print("2. Temperature Converter")
+        print("3. Weight Converter")
+        print("4. Exit")
+        choice = input("Choose an option (1-4): ")
+
         if choice == "1":
             length_converter()
         elif choice == "2":
+            temperature_converter()
+        elif choice == "3":
             weight_converter()
+        elif choice == "4":
+            break
+        else:
+            print("Invalid option. Please try again.\n")
+
+    input("Press Enter to exit...")  # Keeps the console open
+
+if __name__ == "__main__":
+    main()
