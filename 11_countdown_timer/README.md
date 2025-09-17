@@ -25,16 +25,3 @@ Enter a number of seconds, and the timer will count down to zero.
 cd 11_countdown_timer
 python countdown_timer.py
 ```
-```
-🎯 Example Usage
-makefile
-Copy code
-=== Countdown Timer ===
-Enter time in seconds (or 'exit' to quit): 10
-
-00:10
-00:09
-00:08
-...
-⏰ Time's up!
-```
