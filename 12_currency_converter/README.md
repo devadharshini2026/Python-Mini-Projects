@@ -25,15 +25,3 @@ Convert an amount from one currency to another using predefined exchange rates.
 cd 12_currency_converter
 python currency_converter.py
 ```
-```
-🎯 Example Usage
-sql
-Copy code
-=== Currency Converter ===
-Supported currencies: USD, INR, EUR, GBP, JPY
-Convert from (currency code, or 'exit' to quit): USD
-Convert to (currency code): INR
-```
-Amount in USD: 100
-
-100 USD = 8250.00 INR
