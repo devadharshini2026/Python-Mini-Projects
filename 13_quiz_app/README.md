@@ -25,4 +25,3 @@ Users answer multiple-choice questions and get a score at the end.
 cd 13_quiz_app
 python quiz_app.py
 ```
-Quiz Finished! Your Score: 1/3
