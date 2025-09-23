@@ -53,31 +53,4 @@ Each project folder is self-contained, with its own Python files and README.
 | 17 | Stopwatch                     | Time Module, Loops, Functions |
 | 18 | Mad Libs Story Generator      | Strings, Input Handling, File Handling |
 | 19 | Contact Book CLI              | Dictionaries, File Handling, Functions |
-| 20 | Flashcard Quiz                | Lists, Loops, Conditionals, File Handling |
-| 21 | Calculator GUI (Tkinter)     | GUI, Functions, Loops |
-| 22 | Currency Converter GUI        | GUI, Functions, Loops |
-| 23 | To-Do List GUI                | GUI, File Handling, Functions |
-| 24 | Weather App CLI               | API Requests, JSON, Functions |
-| 25 | Dice Rolling Simulator        | Random Module, Loops |
-| 26 | Number to Words Converter     | Functions, Loops, Conditionals |
-| 27 | Simple Chatbot                | Functions, Loops, Conditionals |
-| 28 | Text to Speech                | pyttsx3 Module, Functions |
-| 29 | Calculator Advanced           | Functions, File Handling, Error Handling |
-| 30 | Notes App CLI                 | File Handling, Functions, Loops |
-| 31 | File Organizer                | OS Module, File Handling, Functions |
-| 32 | Alarm GUI                     | GUI, Time Module, Functions |
-| 33 | BMI GUI                        | GUI, Functions |
-| 34 | Tic-Tac-Toe GUI               | GUI, Game Logic |
-| 35 | Hangman GUI                   | GUI, Game Logic |
-| 36 | Password Manager              | File Handling, Functions, Encryption |
-| 37 | Pomodoro Timer                | Time Module, Functions, Loops |
-| 38 | Expense Tracker CLI           | File Handling, Functions |
-| 39 | Expense Tracker GUI           | GUI, File Handling, Functions |
-| 40 | Simple Web Scraper            | Requests, BeautifulSoup, File Handling |
-| 41 | PDF Merger                    | PyPDF2, File Handling, Functions |
-| 42 | CSV Analyzer                  | CSV Module, File Handling, Functions |
-| 43 | Dice Rolling GUI              | GUI, Random Module, Functions |
-| 44 | Calculator with History GUI   | GUI, File Handling, Functions |
-| 45 | Quiz App GUI                  | GUI, Loops, File Handling |
-| 46 | Mini ML Model                 | Numpy, Pandas, Scikit-learn |
 ---
